@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@400;600;700&display=swap');
+/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25150.72999575247!2d-57.56948029592883!3d-38.004163186321264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1689354636308!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*/
+*{
+    font-family: 'Montserrat', sans-serif;  
+    color: #252B42;  
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EFC4C4;
+    font-size: 18px;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+body{
+    background: #F2E1F1;
+    margin:0;
+}
+
+.divLogo{
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.tituloLogo{
+    font-family: 'Leckerli One', cursive;
+    font-size: 40px;
+    line-height: 50px;
+    color: #8E8989;
+}
+
+.linkMenu{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.linkMenu:hover{
+    color: #df8888;
+    font-size: 20px;
+}
+
+.linkMenu:active{
+    color: #df8888;
+    font-size: 20px;
+}
+
+.linkMenu:visited{
+    color: black;
+}
+
+.btn{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #F98FFB;
+    border-radius: 40px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.acercaDe_btn button a {
+    text-decoration: none;
+}
+
+#acercaDeContenedor{
+    display: inline-flex;
+    background-color: #f5f5f5;
+    background-image: url("/images/elementosGym.png");
+    background-repeat: no-repeat;
+    opacity: .7;
+    background-size: 100%;
+    height: 500px;
+}
+
+#fotoLu{
+    padding: 50px 30px 50px 30px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.fotoRedonda{
+    padding: 50px 30px 50px 30px;
+    height: 300px;
+    border-radius: 400px;
+}
+
+#descripcionLu{
+    padding: 40px 80px 50px 30px;
+    font-size: large;
+    line-height: 2;
+}
+
+#acercaDeMi{
+    align-items: flex-end;
+}
+
+.acercaDe_btn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.btnInfo{
+    padding: 10px;
+    background-color: #F98FFB;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+     font-size: 12px;
+    margin-bottom: 30px; 
+}
+
+.btnInfo:hover {
+    background-color: #8E8989;
+}
+
+#entrenamientoContenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#entrenamientoTitulo{
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 50px;
+}
+
+.contenedorFooter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgba(237, 39, 39, 0.12);
+    justify-content: space-between;
+}
+
+.iconosFooter{
+    display: flex;
+    margin-left: 30px;
+}
+
+#iconosRedes{
+    font-size: 32px;
+    margin: 20px;
+}
+
+.copyright{
+    margin-right: 30px;
+}
+
+.contenedorClases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.52);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.13);
+}
+
+.hCenter{
+    text-align: center;
+}
+
+.tituloClases{
+    margin: 10px 10px 10px 30px;
+    font-size: x-large;
+    line-height: 2;
+}
+
+.subtituloClases{
+    margin: 10px 10px 10px 30px;
+    font-size: large;
+    line-height: 2;
+}
+
+.misEntrenamientos{
+    margin-top: 1.5rem;
+    width: 350px;
+    height: 238px;
+    border-radius: 5px;
+}
+
+.descripcionClases{
+    height: 160px;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+.contenedorTestimonio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcionTestimonio{
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    }
+
+.claseStar{
+    color: #F3CD03;
+}    
+
+.imagenMujer{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+/* estilos misClases */
+.contenedorAcercaDe{
+    display: flex;
+    width: 90%;
+    height: 407px;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: F2E7E7;
+    box-shadow: 4px 4px 17px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.flexAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexAbout section{
+    display: flex;
+    justify-content: center
+}
+
+.flexContacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedorContacto{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 17px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.btnContactame{
+    width: 200px;
+    height: 50px;
+    background: #F98FFB;
+    border-radius: 40px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.campoDatos{
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    background: #F2E1F1;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+     font-size: 12px;
+    margin-bottom: 30px; 
+}
+
+#frameMapa{
+    width: 100%;
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        position: none;
+    }
+
+    header nav{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .responsive{
+        width: 100%;
+    }
+    .campoDatos{
+        width: 85%;
+    }
+
+    .responsive iframe {
+        width: 100%;
+    }
+
+    .flexContacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedorContacto{
+        width: 90%;
+        margin-left: 0px;
+    }
+}
